@@ -1,4 +1,4 @@
-package com.dewfn.timerwheel;
+package timerwheel;
 
 @FunctionalInterface
 public interface TimeTaskConsumer<T> {

@@ -1,4 +1,4 @@
-package com.dewfn.timerwheel;
+package timerwheel;
 
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
@@ -26,7 +26,7 @@ public interface ITimerWheel<C> {
 
     long getTaskExecMaxThreadKeepLiveTime();
 
-     void setTaskExecMaxThreadKeepLiveTime(long taskExecMaxThreadKeepLiveTime,TimeUnit unit) ;
+     void setTaskExecMaxThreadKeepLiveTime(long taskExecMaxThreadKeepLiveTime, TimeUnit unit) ;
 
         int getTaskExecWorkingMaxThreadSize();
 

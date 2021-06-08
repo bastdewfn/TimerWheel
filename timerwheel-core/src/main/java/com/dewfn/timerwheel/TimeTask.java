@@ -1,4 +1,4 @@
-package com.dewfn.timerwheel;
+package timerwheel;
 
 import java.util.concurrent.TimeUnit;
 
