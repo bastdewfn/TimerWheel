@@ -1,4 +1,4 @@
-package com.dewfn.timerwheel.autoconfigure.annotated;
+package com.dewfn.timerwheel.autoconfigure.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 
@@ -14,5 +14,4 @@ public @interface TimerTaskCall {
     @AliasFor("value")
     Class<?>[] classes() default {};
 
-    String condition() default "";
 }

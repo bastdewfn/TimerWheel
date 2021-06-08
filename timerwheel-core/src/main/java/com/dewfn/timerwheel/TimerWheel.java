@@ -22,7 +22,7 @@ public class TimerWheel implements ITimerWheel<TimeTaskConsumer> {
     //时间刻度
     private long timerFrequency = TimeUnit.SECONDS.toMillis(1); //毫秒单位，刻度值，  默认1秒
     private volatile int currentOffset = 0;
-    private WheelPartition<TimeTaskConsumer, Object>[] wheelPartitions = new WheelPartition[wheelSize];
+    private WheelPartition<TimeTaskConsumer, Object>[] wheelPartitions;
     private Thread timeThread;
     private final ReentrantLock lock = new ReentrantLock();
 
@@ -161,6 +161,7 @@ public class TimerWheel implements ITimerWheel<TimeTaskConsumer> {
         }
         isEnd = false;
 
+        wheelPartitions = new WheelPartition[wheelSize];
         for (int i = 0; i < wheelSize; i++) {
             wheelPartitions[i] = new LinkedWheelPartition(i);
         }

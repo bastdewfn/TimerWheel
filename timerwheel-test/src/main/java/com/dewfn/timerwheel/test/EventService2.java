@@ -6,11 +6,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component
-public class EventService {
+public class EventService2 {
 
     Logger log= LoggerFactory.getLogger(this.getClass());
     @TimerTaskCall(SourceData.class)
     private void callBack(SourceData sourceData){
-        log.info("任务执行了,id:{},年龄:{}",sourceData.getId(),sourceData.getAge());
+        log.info("第二次任务执行了,id:{},年龄:{}",sourceData.getId(),sourceData.getAge());
     }
 }

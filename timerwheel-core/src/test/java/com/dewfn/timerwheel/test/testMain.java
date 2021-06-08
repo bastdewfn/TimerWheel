@@ -1,9 +1,9 @@
 package com.dewfn.timerwheel.test;
 
-import com.dewfn.timerwheel.TimerWheel;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import com.dewfn.timerwheel.TimerWheel;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;

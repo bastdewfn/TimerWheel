@@ -1,6 +1,6 @@
-package timerwheel;
+package com.dewfn.timerwheel;
 
 @FunctionalInterface
 public interface TimeTaskConsumer<T> {
-   void exec(T sourceDada);
+   void exec(T sourceData);
 }
